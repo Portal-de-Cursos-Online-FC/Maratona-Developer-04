@@ -132,7 +132,7 @@ header h1 {
 }
 
 .card p {
-    font-size: 2rem;
+    font-size: 1.9rem;
     line-height: 3rem;
     margin-top: 1rem;
 }
@@ -218,6 +218,7 @@ footer {
     justify-content: center;
     opacity: 0;
     visibility: hidden;
+    z-index: 999;
 }
 
 .modal-overlay .active {
@@ -228,6 +229,7 @@ footer {
 .modal {
     background: #f0f2f5;
     padding: 2.4rem;
+    z-index: 1;
 }
 
 
