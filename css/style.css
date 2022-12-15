@@ -111,10 +111,17 @@ header h1 {
 
 /* Footer ====================  */
 
+#transactions {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
 #data-table {
     width: 100%;
-    border-spacing: 0 0.5rem;
+    margin-top: 1rem;
     color: #969cb3;
+    border-spacing: 0 0.5rem;
 }
 
 table thead tr th:first-child,
@@ -165,4 +172,23 @@ footer {
     padding: 4rem 0 2rem;
     color: var(--color-dark-blue);
     opacity: 0.6;
+}
+
+
+
+
+/* Responsive ====================  */
+/* Responsive ====================  */
+/* Responsive ====================  */
+@media (min-width: 800px) {
+    html {
+        font-size: 87.5%;
+    }
+
+
+    #balance {
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        gap: 2rem;
+    }
 }
