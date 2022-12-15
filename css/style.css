@@ -1,6 +1,9 @@
 /* Global ====================  */
 :root {
     --color-dark-blue: #363f5f;
+    --green: #49AA26;
+    --light-green: #3dd705;
+    --red: #e92929;
 }
 
 * {
@@ -47,12 +50,27 @@ h2 {
 /* Links and Buttons ==========  */
 
 a {
-    color: #49AA26;
+    color: var(--green);
     text-decoration: none;
 }
 
 a:hover {
-    color: #3dd705;
+    color: var(--light-green);
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    color: white;
+    background: var(--green);
+    padding: 0;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--light-green);
 }
 
 .button.new {
@@ -60,6 +78,20 @@ a:hover {
     margin-bottom: .8rem;
 }
 
+.button.cancel {
+    color: white;
+    background: var(--red);
+    border-radius: 0.25rem;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+}
+
+.button.cancel:hover {
+    opacity: 1;
+}
 
 /* Header ====================  */
 header {
@@ -106,7 +138,7 @@ header h1 {
 }
 
 .card.account-balance {
-    background: #49AA26;
+    background: var(--green);
 }
 
 /* Footer ====================  */
@@ -178,7 +210,7 @@ footer {
 .modal-overlay {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
     top: 0;
     display: flex;
@@ -198,6 +230,41 @@ footer {
     padding: 2.4rem;
 }
 
+
+/* Form ====================  */
+#form {
+    max-width: 500px;
+}
+
+#form h2 {
+    margin-top: 0;
+}
+
+input {
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.8rem;
+    width: 100%;
+} 
+
+.input-group {
+    margin-top: 0.8rem;
+}
+
+.input-group small {
+    opacity: 0.4;
+}
+
+.input-group.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-group.input-group.actions .button,
+.input-group.input-group.actions button {
+    width: 48%;
+}
 
 
 /* Responsive ====================  */
